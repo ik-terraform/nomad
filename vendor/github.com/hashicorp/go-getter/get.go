@@ -62,6 +62,8 @@ var httpClient = cleanhttp.DefaultClient()
 func init() {
 	httpGetter := &HttpGetter{
 		Netrc: true,
+
+		 // todo: set http headers
 	}
 
 	Getters = map[string]Getter{

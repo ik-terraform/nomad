@@ -1104,6 +1104,7 @@ func ApiTaskToStructsTask(job *structs.Job, group *structs.TaskGroup,
 			structsTask.Artifacts[k] = &structs.TaskArtifact{
 				GetterSource:  *ta.GetterSource,
 				GetterOptions: ta.GetterOptions,
+				GetterHeaders: ta.GetterHeaders,
 				GetterMode:    *ta.GetterMode,
 				RelativeDest:  *ta.RelativeDest,
 			}

@@ -7866,6 +7866,10 @@ type TaskArtifact struct {
 	// go-getter.
 	GetterOptions map[string]string
 
+	// GetterHeaders are headers to use when downloading the artifact using
+	// go-getter.
+	GetterHeaders map[string]string
+
 	// GetterMode is the go-getter.ClientMode for fetching resources.
 	// Defaults to "any" but can be set to "file" or "dir".
 	GetterMode string
