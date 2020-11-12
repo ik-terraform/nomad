@@ -726,6 +726,7 @@ func (t *Task) Canonicalize(tg *TaskGroup, job *Job) {
 type TaskArtifact struct {
 	GetterSource  *string           `mapstructure:"source" hcl:"source,optional"`
 	GetterOptions map[string]string `mapstructure:"options" hcl:"options,block"`
+	GetterHeaders map[string]string `mapstructure:"headers" hcl:"headers,block"`
 	GetterMode    *string           `mapstructure:"mode" hcl:"mode,optional"`
 	RelativeDest  *string           `mapstructure:"destination" hcl:"destination,optional"`
 }
